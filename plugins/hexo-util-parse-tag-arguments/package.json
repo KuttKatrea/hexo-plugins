@@ -1,0 +1,22 @@
+{
+  "name": "hexo-util-parse-tag-arguments",
+  "version": "2021.1.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha **/*.spec.js"
+  },
+  "keywords": [
+    "hexo"
+  ],
+  "author": "Kutt Katrea <kutt@katrea.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KuttKatrea/hexo-plugins/issues"
+  },
+  "homepage": "https://github.com/KuttKatrea/hexo-plugins#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
