@@ -1,6 +1,6 @@
 function parseSingleArg(singleArg, defaultKey) {
-  var pieces = singleArg.split("=", 2);
-  if (pieces.length == 1) {
+  const pieces = singleArg.split("=", 2);
+  if (pieces.length === 1) {
     return [defaultKey, pieces[0]];
   } else {
     return [pieces[0], pieces[1]];
@@ -9,7 +9,7 @@ function parseSingleArg(singleArg, defaultKey) {
 
 /**
  * @typedef {{
- *   arguments: Array<string>,
+ *   sourceArguments: Array<string>,
  *   defaultKey: string,
  *   defaultArguments: Object<string,string>
  * }}
@@ -25,14 +25,14 @@ let ParseTagArgumentsOptions;
  * @return {!Object<string,string>} Object with the resulting name-value mapping.
  */
 function parseTagArguments(options) {
-  const argumentList = options.arguments || [];
+  const sourceArguments = options.sourceArguments || [];
   const defaultKey = options.defaultKey || "default";
-  const defaults = options.defaults || {};
+  const defaultArguments = options.defaultArguments || {};
 
-  const namedArguments = Object.assign({}, defaults);
+  const namedArguments = Object.assign({}, defaultArguments);
 
-  for (let i = 0; i < argumentList.length; i++) {
-    const [key, value] = parseSingleArg(argumentList[i], defaultKey);
+  for (let i = 0; i < sourceArguments.length; i++) {
+    const [key, value] = parseSingleArg(sourceArguments[i], defaultKey);
     namedArguments[key] = value;
   }
 

@@ -32,15 +32,15 @@ to
 In the plugin:
 
 ~~~js
-var parseTagArguments = require("parseTagArguments");
+var parseTagArguments = require("hexo-util-parse-tag-arguments");
 
 hexo.extend.tag.register(
   "custom_tag",
   function (args, content) {
     var tagArguments = parseTagArguments({
-      argumentList: args,
+      sourceArguments: args,
       defaultKey: "file",
-      defaults: {
+      defaultArguments: {
         format: "svg"
       }
     });

@@ -5,9 +5,9 @@ describe('parseTagArguments', function() {
   it('should gnerate a map', function() {
 
     var result = parseTagArguments({
-      arguments: ["value", "param1=value1", "param2=value2"],
+      sourceArguments: ["value", "param1=value1", "param2=value2"],
       defaultKey: "param",
-      defaults: {
+      defaultArguments: {
         "param3": "value3"
       }
     })
