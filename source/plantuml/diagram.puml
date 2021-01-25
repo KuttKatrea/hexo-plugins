@@ -1,0 +1,7 @@
+@startuml
+!include _plantuml/local.puml
+
+a -> b
+b -> c
+a <- c
+@enduml

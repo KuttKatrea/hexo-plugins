@@ -1,0 +1,24 @@
+{
+  "name": "hexo-plantuml",
+  "version": "2021.1.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "hexo",
+    "tag",
+    "plantuml"
+  ],
+  "author": "Kutt Katrea <kutt@katrea.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KuttKatrea/hexo-plugins/issues"
+  },
+  "homepage": "https://github.com/KuttKatrea/hexo-plugins#readme",
+  "dependencies": {
+    "fs-extra": "^4.0.1",
+    "hexo-util-parse-tag-arguments": "^2021.1.2",
+    "node-plantuml": "^0.5.0",
+    "q": "^1.5.0"
+  }
+}
