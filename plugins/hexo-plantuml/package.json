@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/KuttKatrea/hexo-plugins/issues"
   },
-  "homepage": "https://github.com/KuttKatrea/hexo-plugins#readme",
+  "homepage": "https://kuttkatrea.github.io/hexo-plugins/plantuml/",
   "dependencies": {
     "fs-extra": "^4.0.1",
     "hexo-util-parse-tag-arguments": "^2021.1.2",

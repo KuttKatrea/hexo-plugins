@@ -1,0 +1,30 @@
+# Theme
+darkmode: true
+
+#scheme: Muse
+#scheme: Mist
+#scheme: Pisces
+scheme: Gemini
+
+menu:
+  home: / || fa fa-home
+  PlantUML: /plantuml/ || fa fa-industry
+  Diagrams.net: /diagrams-net/ || fa fa-file
+
+  # about: /about/ || fa fa-user
+  #tags: /tags/ || fa fa-tags
+  #categories: /categories/ || fa fa-th
+  #archives: /archives/ || fa fa-archive
+  #schedule: /schedule/ || fa fa-calendar
+  #sitemap: /sitemap.xml || fa fa-sitemap
+  #commonweal: /404/ || fa fa-heartbeat
+
+github_banner:
+  enable: true
+  permalink: https://github.com/KuttKatrea/hexo-plugins
+  title: Follow me on GitHub
+
+site_state: false
+
+custom_file_path:
+  style: source/_data/custom.styl

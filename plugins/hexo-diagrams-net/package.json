@@ -1,0 +1,23 @@
+{
+    "name": "hexo-diagrams-net",
+    "version": "2021.7.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {},
+    "keywords": [
+        "hexo",
+        "tag",
+        "diagrams",
+        "diagrams.net",
+        "draw.io"
+    ],
+    "author": "Kutt Katrea <kutt@katrea.net>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/KuttKatrea/hexo-plugins/issues"
+    },
+    "homepage": "https://kuttkatrea.github.io/hexo-plugins/diagrams-net/",
+    "dependencies": {
+        "hexo-util-parse-tag-arguments": "^2021.1.2"
+    }
+}

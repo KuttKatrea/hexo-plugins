@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Katrea's plugins for Hexo
+title: Kutt Katrea's plugins for Hexo
 subtitle: ''
 description: ''
 keywords:
-author: Kutt Katrea <kutt@katrea.net>
+author: Kutt Katrea
 language: en
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://example.com
-root: /
+url: https://kuttkatrea.github.io
+root: /hexo-plugins/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -103,27 +103,11 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
-
-theme_config:
-  # Theme
-  darkmode: true
-
-  #scheme: Muse
-  #scheme: Mist
-  #scheme: Pisces
-  scheme: Gemini
-
-  menu:
-    home: / || fa fa-home
-    #about: /about/ || fa fa-user
-    #tags: /tags/ || fa fa-tags
-    #categories: /categories/ || fa fa-th
-    archives: /archives/ || fa fa-archive
-    #schedule: /schedule/ || fa fa-calendar
-    #sitemap: /sitemap.xml || fa fa-sitemap
-    #commonweal: /404/ || fa fa-heartbeat
+  type: git
+  repo: https://github.com/KuttKatrea/hexo-plugins
+  branch: pages
 
 plantuml:
   renderer:
     enabled: true
+
