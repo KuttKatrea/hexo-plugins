@@ -32,7 +32,7 @@ function renderTag(args) {
       'lightbox': "false",
       'nav': "true",
       'resize': "false",
-      "page": "1",
+      "page": "0",
       'toolbar': 'lightbox zoom layers pages',
     }
   });
