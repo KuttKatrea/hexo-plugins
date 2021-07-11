@@ -3,5 +3,5 @@
 
 a -> b
 b -> c
-a <- c
+a <- c: Prueba máxima
 @enduml

@@ -9,7 +9,7 @@ const Q = require("q");
  * @typedef {{
  *      include: Array<string>,
  *      format: string,
- *      encoding: string
+ *      charset: string
  * }}
  */
 let PlantumlOptions;

@@ -6,7 +6,7 @@ function getConfig(hexo) {
     {
       enabled: false,
       format: "svg",
-      encoding: "utf-8",
+      charset: "utf-8",
       include: [],
     },
     plantumlConfig.renderer
@@ -15,7 +15,7 @@ function getConfig(hexo) {
   const tagConfig = Object.assign(
     {
       format: "svg",
-      encoding: "utf-8",
+      charset: "utf-8",
       include: [],
       alt: "PlantUML Diagram",
       injectStyles: true,
