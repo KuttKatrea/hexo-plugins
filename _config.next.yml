@@ -10,6 +10,7 @@ menu:
   home: / || fa fa-home
   PlantUML: /plantuml/ || fa fa-industry
   Diagrams.net: /diagrams-net/ || fa fa-file
+  bpmn-js: /bpmn-js/ || fa fa-file
 
   # about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags

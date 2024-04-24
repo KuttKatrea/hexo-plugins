@@ -1,0 +1,24 @@
+{
+    "name": "hexo-bpmn-js",
+    "version": "2024.4.1",
+    "description": "Embed bpmn-js diagrams in Hexo",
+    "main": "index.js",
+    "scripts": {},
+    "keywords": [
+        "hexo",
+        "tag",
+        "bpmn",
+        "bpmn-js"
+    ],
+    "author": "Kutt Katrea <kutt@katrea.net>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/KuttKatrea/hexo-plugins/issues"
+    },
+    "homepage": "https://kuttkatrea.github.io/hexo-plugins/bpmn-js/",
+    "dependencies": {
+      "hexo-util-parse-tag-arguments": "^2021.1.2",
+      "pug": "^2.0.3",
+      "uuid": "^8.3.1"
+  }
+}
