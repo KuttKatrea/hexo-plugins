@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/hexo-plugins/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/hexo-plugins/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/hexo-plugins/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/hexo-plugins/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/hexo-plugins/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"kuttkatrea.github.io","root":"/hexo-plugins/","images":"/hexo-plugins/images","scheme":"Gemini","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/hexo-plugins/js/config.js"></script>
+<meta name="description" content="Installation1npm install hexo-bpmn-js  UsageSimple usage1&amp;#123;% bpmnjs &quot;demo.bpmn&quot; %&amp;#125;  (function() {   var containerId &#x3D; &quot;#bpmn-container-f6866806-ac64-49bf-8e96-1862ffb1141b&quot;;   var f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="bpmn-js">
+<meta property="og:url" content="https://kuttkatrea.github.io/bpmn-js/index.html">
+<meta property="og:site_name" content="Kutt Katrea&#39;s plugins for Hexo">
+<meta property="og:description" content="Installation1npm install hexo-bpmn-js  UsageSimple usage1&amp;#123;% bpmnjs &quot;demo.bpmn&quot; %&amp;#125;  (function() {   var containerId &#x3D; &quot;#bpmn-container-f6866806-ac64-49bf-8e96-1862ffb1141b&quot;;   var f">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-04-24T16:12:34.006Z">
+<meta property="article:modified_time" content="2024-04-24T16:12:34.006Z">
+<meta property="article:author" content="Kutt Katrea">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://kuttkatrea.github.io/bpmn-js/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"https://kuttkatrea.github.io/bpmn-js/index.html","path":"bpmn-js/index.html","title":"bpmn-js"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>bpmn-js | Kutt Katrea's plugins for Hexo
+</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/hexo-plugins/css/noscript.css">
+  </noscript>
+<!-- Start: BPMN Viewer -->
+<script type="text/javascript" src="https://unpkg.com/bpmn-js@8/dist/bpmn-navigated-viewer.development.js"></script>
+<style type="text/css" rel="stylesheet" href="https://unpkg.com/bpmn-js@8/dist/assets/diagram-js.css"></style>
+<script type="text/javascript" src="https://unpkg.com/jquery@3/dist/jquery.js"></script>
+<style type="text/css" rel="stylesheet">#canvas { height: 100%; padding: 0; margin: 0; } </style>
+<!-- End: BPMN Viewer -->
+
+    <!-- Start: PlantUML -->
+    <style type="text/css" rel="stylesheet">
+      .plantuml-container {
+        width: 100%;
+        overflow: auto;
+        text-align: center;
+      }
+
+      .plantuml-container > svg {
+        max-width: 100%; height: unset !important;
+      }
+
+      .plantuml-container > img {
+        max-width: 100%; height: unset !important;
+      }
+    </style>
+    <!-- End: PlantUML -->
+    </head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/hexo-plugins/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Kutt Katrea's plugins for Hexo</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/hexo-plugins/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-plantuml"><a href="/hexo-plugins/plantuml/" rel="section"><i class="fa fa-industry fa-fw"></i>PlantUML</a></li>
+        <li class="menu-item menu-item-diagrams.net"><a href="/hexo-plugins/diagrams-net/" rel="section"><i class="fa fa-file fa-fw"></i>Diagrams.net</a></li>
+        <li class="menu-item menu-item-bpmn-js"><a href="/hexo-plugins/bpmn-js/" rel="section"><i class="fa fa-file fa-fw"></i>bpmn-js</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Installation"><span class="nav-number">1.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">2.</span> <span class="nav-text">Usage</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Simple-usage"><span class="nav-number">2.1.</span> <span class="nav-text">Simple usage</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-overview">
+            <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Kutt Katrea</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/KuttKatrea/hexo-plugins" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+  
+  
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">bpmn-js
+</h1>
+
+<div class="post-meta-container">
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-bpmn-js</span><br></pre></td></tr></table></figure>
+
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><h3 id="Simple-usage"><a href="#Simple-usage" class="headerlink" title="Simple usage"></a>Simple usage</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% bpmnjs &quot;demo.bpmn&quot; %&#125;</span><br></pre></td></tr></table></figure>
+
+<div id="bpmn-container-f6866806-ac64-49bf-8e96-1862ffb1141b" style="width: 100%; height: 120px; position: relative; border: 1px solid black;"></div><script>(function() {
+  var containerId = "#bpmn-container-f6866806-ac64-49bf-8e96-1862ffb1141b";
+  var filename = "demo.bpmn";
+
+  var bpmnViewer = new BpmnJS({
+    container: containerId
+  });
+
+  $.get(filename, function(data) {
+      var promise = bpmnViewer.importXML(data);
+      promise.then(
+      function() {
+          // https://forum.bpmn.io/t/how-to-center-the-bpmn-graph-in-the-viewer/3773/10
+          // access viewer components
+          var canvas = bpmnViewer.get('canvas');
+          // var overlays = bpmnViewer.get('overlays');
+          // zoom to fit full viewport
+          const { inner } = canvas.viewbox();
+          const center = {
+            x: inner.x + inner.width / 2,
+            y: inner.y + inner.height / 2
+          };
+
+          canvas.zoom('fit-viewport', center);
+      }).catch(function(err) {
+          return console.error('error rendering', err);
+      });
+  }, 'text');
+})();</script>
+
+      </div>
+      
+      
+      
+    </div>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kutt Katrea</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/hexo-plugins/js/comments.js"></script><script src="/hexo-plugins/js/utils.js"></script><script src="/hexo-plugins/js/motion.js"></script><script src="/hexo-plugins/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+<style>
+.mxgraph-container { width: 100%; }
+.mxgraph {
+  width: 100% !important;
+  border:1px solid transparent;
+}
+.geDiagramContainer { width: 100% !important; }
+</style>
+</body>
+
+</html>
