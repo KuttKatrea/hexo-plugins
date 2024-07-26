@@ -2,31 +2,31 @@ div(id='bpmn-container-' + id, style="width: 100%; height: " + height + "; posit
 
 script.
     (function() {
-      var containerId = "#bpmn-container-#{id}";
-      var filename = "#{file}";
+        const containerId = "#bpmn-container-#{id}";
+        const filename = "#{file}";
 
-      var bpmnViewer = new BpmnJS({
-        container: containerId
-      });
+        const bpmnViewer = new BpmnJS({
+            container: containerId
+        });
 
-      $.get(filename, function(data) {
-          var promise = bpmnViewer.importXML(data);
-          promise.then(
-          function() {
-              // https://forum.bpmn.io/t/how-to-center-the-bpmn-graph-in-the-viewer/3773/10
-              // access viewer components
-              var canvas = bpmnViewer.get('canvas');
-              // var overlays = bpmnViewer.get('overlays');
-              // zoom to fit full viewport
-              const { inner } = canvas.viewbox();
-              const center = {
-                x: inner.x + inner.width / 2,
-                y: inner.y + inner.height / 2
-              };
+        $.get(filename, function(data) {
+            const promise = bpmnViewer.importXML(data);
+            let scale = "#{scale}";
 
-              canvas.zoom('fit-viewport', center);
-          }).catch(function(err) {
-              return console.error('error rendering', err);
-          });
-      }, 'text');
+            if ( scale !== "fit-viewport") {
+                scale = parseFloat(scale)
+                if (isNaN(scale)) {
+                    scale = 1
+                }
+            }
+
+            promise.then(
+                function() {
+                    const canvas = bpmnViewer.get('canvas');
+                    const center = {x: 0, y: 0};
+                    canvas.zoom(scale, center);
+                }).catch(function(err) {
+                return console.error('error rendering', err);
+            });
+        }, 'text');
     })();

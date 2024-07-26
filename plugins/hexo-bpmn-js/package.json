@@ -1,6 +1,6 @@
 {
     "name": "hexo-bpmn-js",
-    "version": "2024.4.1",
+    "version": "2024.7.1",
     "description": "Embed bpmn-js diagrams in Hexo",
     "main": "index.js",
     "scripts": {},
