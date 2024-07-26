@@ -1,0 +1,23 @@
+{
+    "name": "hexo-tag-svg-include",
+    "description": "Embed SVG files in Hexo",
+    "version": "2024.7.1",
+    "main": "index.js",
+    "dependencies": {
+        "hexo-util-parse-tag-arguments": "^2021.1.2",
+        "uuid": "^8.3.1",
+        "fs-extra": "^4.0.1"
+    },
+    "keywords": [
+        "hexo",
+        "tag",
+        "svg",
+        "include"
+    ],
+    "author": "Kutt Katrea <kutt@katrea.net>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/KuttKatrea/hexo-plugins/issues"
+    },
+    "homepage": "https://kuttkatrea.github.io/hexo-plugins/svg_include/"
+}
