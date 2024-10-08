@@ -20,12 +20,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"kuttkatrea.github.io","root":"/hexo-plugins/","images":"/hexo-plugins/images","scheme":"Gemini","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/hexo-plugins/js/config.js"></script>
-<meta name="description" content="Installation1npm install hexo-bpmn-js  UsageSimple usage1&amp;#123;% bpmnjs &quot;demo.bpmn&quot; %&amp;#125;  (function() {     const containerId &#x3D; &quot;#bpmn-container-8321ebd9-ba34-4a57-ad24-abacf049a20a&quot;;">
+<meta name="description" content="Installation1npm install hexo-bpmn-js  UsageSimple usage1&amp;#123;% bpmnjs &quot;demo.bpmn&quot; %&amp;#125;  (function() {     const containerId &#x3D; &quot;#bpmn-container-f9051c8b-0824-49df-8eed-bdeab87020d8&quot;;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="bpmn-js">
 <meta property="og:url" content="https://kuttkatrea.github.io/bpmn-js/index.html">
 <meta property="og:site_name" content="Kutt Katrea&#39;s plugins for Hexo">
-<meta property="og:description" content="Installation1npm install hexo-bpmn-js  UsageSimple usage1&amp;#123;% bpmnjs &quot;demo.bpmn&quot; %&amp;#125;  (function() {     const containerId &#x3D; &quot;#bpmn-container-8321ebd9-ba34-4a57-ad24-abacf049a20a&quot;;">
+<meta property="og:description" content="Installation1npm install hexo-bpmn-js  UsageSimple usage1&amp;#123;% bpmnjs &quot;demo.bpmn&quot; %&amp;#125;  (function() {     const containerId &#x3D; &quot;#bpmn-container-f9051c8b-0824-49df-8eed-bdeab87020d8&quot;;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-04-24T16:12:34.006Z">
 <meta property="article:modified_time" content="2024-04-24T16:12:34.006Z">
@@ -50,6 +50,12 @@
   <noscript>
     <link rel="stylesheet" href="/hexo-plugins/css/noscript.css">
   </noscript>
+<!-- Start: BPMN Viewer -->
+<script type="text/javascript" src="https://unpkg.com/bpmn-js@17/dist/bpmn-navigated-viewer.development.js"></script>
+<style type="text/css" rel="stylesheet" href="https://unpkg.com/bpmn-js@17/dist/assets/diagram-js.css"></style>
+<script type="text/javascript" src="https://unpkg.com/jquery@3/dist/jquery.js"></script>
+<style type="text/css" rel="stylesheet">#canvas { height: 100%; padding: 0; margin: 0; } </style>
+<!-- End: BPMN Viewer -->
 
     <!-- Start: PlantUML -->
     <style type="text/css" rel="stylesheet">
@@ -68,13 +74,7 @@
       }
     </style>
     <!-- End: PlantUML -->
-    <!-- Start: BPMN Viewer -->
-<script type="text/javascript" src="https://unpkg.com/bpmn-js@17/dist/bpmn-navigated-viewer.development.js"></script>
-<style type="text/css" rel="stylesheet" href="https://unpkg.com/bpmn-js@17/dist/assets/diagram-js.css"></style>
-<script type="text/javascript" src="https://unpkg.com/jquery@3/dist/jquery.js"></script>
-<style type="text/css" rel="stylesheet">#canvas { height: 100%; padding: 0; margin: 0; } </style>
-<!-- End: BPMN Viewer -->
-</head>
+    </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -206,8 +206,8 @@
 
 <h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><h3 id="Simple-usage"><a href="#Simple-usage" class="headerlink" title="Simple usage"></a>Simple usage</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% bpmnjs &quot;demo.bpmn&quot; %&#125;</span><br></pre></td></tr></table></figure>
 
-<div id="bpmn-container-8321ebd9-ba34-4a57-ad24-abacf049a20a" style="width: 100%; height: 512px; position: relative; border: 1px solid black;"></div><script>(function() {
-    const containerId = "#bpmn-container-8321ebd9-ba34-4a57-ad24-abacf049a20a";
+<div id="bpmn-container-f9051c8b-0824-49df-8eed-bdeab87020d8" style="width: 100%; height: 512px; position: relative; border: 1px solid black;"></div><script>(function() {
+    const containerId = "#bpmn-container-f9051c8b-0824-49df-8eed-bdeab87020d8";
     const filename = "demo.bpmn";
 
     const bpmnViewer = new BpmnJS({
