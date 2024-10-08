@@ -1,0 +1,15 @@
+version: 3
+tasks:
+  npm:publish-plugin:bpmn-js:
+    dir: plugins\hexo-bpmn-js
+    cmd: npm publish
+  npm:publish-plugin:svg-include:
+    dir: plugins\hexo-tag-svg-include
+    cmd: npm publish
+  npm:publish-plugin:hexo-tag-d2:
+    dir: plugins\hexo-tag-d2
+    cmd: npm publish
+  pages:deploy:
+    cmds:
+      - npx hexo clean
+      - npx hexo deploy

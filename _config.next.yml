@@ -12,6 +12,7 @@ menu:
   Diagrams.net: /diagrams-net/ || fa fa-file
   bpmn-js: /bpmn-js/ || fa fa-file
   SVG Include: /svg_include/ || fa fa-file
+  D2: /d2/ || fa fa-file
 
   # about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags

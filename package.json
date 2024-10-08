@@ -18,6 +18,7 @@
     "hexo-deployer-git": "^3.0.0",
     "hexo-diagrams-net": "file://./plugins/hexo-diagrams-net",
     "hexo-plantuml": "file://./plugins/hexo-plantuml",
+    "hexo-tag-d2": "file://./plugins/hexo-tag-d2",
     "hexo-bpmn-js": "file://./plugins/hexo-bpmn-js",
     "hexo-tag-svg-include": "file://./plugins/hexo-tag-svg-include",
     "hexo-renderer-ejs": "^1.0.0",

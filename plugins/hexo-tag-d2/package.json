@@ -1,0 +1,25 @@
+{
+  "name": "hexo-tag-d2",
+  "version": "2024.10.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hexo",
+    "tag",
+    "diagrams",
+    "d2"
+  ],
+  "author": "Kutt Katrea <kutt@katrea.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KuttKatrea/hexo-plugins/issues"
+  },
+  "homepage": "https://kuttkatrea.github.io/hexo-plugins/d2/",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "hexo-util-parse-tag-arguments": "^2021.1.2"
+  }
+}
