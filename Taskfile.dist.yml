@@ -9,6 +9,9 @@ tasks:
   npm:publish-plugin:hexo-tag-d2:
     dir: plugins\hexo-tag-d2
     cmd: npm publish
+  npm:publish-plugin:diagrams-net:
+    dir: plugins\hexo-diagrams-net
+    cmd: npm publish
   pages:deploy:
     cmds:
       - npx hexo clean
