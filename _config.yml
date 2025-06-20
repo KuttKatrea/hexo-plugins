@@ -111,3 +111,5 @@ plantuml:
   renderer:
     enabled: true
 
+drawio: {}
+

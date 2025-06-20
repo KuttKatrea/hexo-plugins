@@ -1,6 +1,6 @@
 {
     "name": "hexo-diagrams-net",
-    "version": "2024.4.1",
+    "version": "2025.6.1",
     "description": "Insert diagrams.net/draw.io diagrams into Hexo sites",
     "main": "index.js",
     "scripts": {},

@@ -1,5 +1,6 @@
 /* global hexo */
 const parseTagArguments = require("hexo-util-parse-tag-arguments");
+const config = require("./lib/config")(hexo);
 
 function quote(str) {
   return str.replace(/"/g, '&quot;');
@@ -70,6 +71,7 @@ function mapOptionTypes(context, stringOptions) {
     'allow-zoom-in': stringToBool(stringOptions, 'allow-zoom-in'),
     'border': stringToString(stringOptions, 'border'),
     'page': stringToInt(stringOptions, 'page'),
+    'pageId': stringToString(stringOptions, 'page-id'),
     'nav': stringToBool(stringOptions, 'nav'),
     'resize': stringToBool(stringOptions, 'resize'),
     'center': stringToBool(stringOptions, 'center'),
@@ -86,14 +88,7 @@ function renderTag(args) {
   const stringOptions = parseTagArguments({
     sourceArguments: args,
     defaultKey: "url",
-    defaultArguments: {
-      'highlight': '#0000ff',
-      'lightbox': "false",
-      'nav': "true",
-      'resize': "false",
-      "page": "0",
-      'toolbar': 'lightbox zoom layers pages',
-    }
+    defaultArguments: config.defaultArguments
   });
 
   const typedOptions = mapOptionTypes(context, stringOptions)

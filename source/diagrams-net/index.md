@@ -29,6 +29,8 @@ npm install hexo-diagrams-net
 
 From: https://www.drawio.com/doc/faq/embed-html-options
 
+(`page-id` is a non documented option that sets the `pageId`).
+
 ```
 {% diagramsnet "diagram.drawio" 
    highlight="#0000ff"
@@ -36,6 +38,7 @@ From: https://www.drawio.com/doc/faq/embed-html-options
    nav=true
    resize=false
    page=1
+   page-id="pageById"
    toolbar="lightbox zoom layers pages" 
    toolbar-buttons='{"key": {"title": "CUSTOM"}}'
    toolbar-nohide=false
@@ -64,6 +67,7 @@ From: https://www.drawio.com/doc/faq/embed-html-options
    nav=true
    resize=false
    page=1
+   page-id="MRuas7O7aRfa1FYKbwvL"
    toolbar="lightbox zoom layers pages" 
    toolbar-buttons='{"key": {"title": "CUSTOM"}}'
    toolbar-nohide=false
